@@ -1,5 +1,5 @@
 import MyButton from './components/MyButton';
-import Title from './components/Title'
+import Heading from './components/heading';
 import { useState } from 'react';
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
     <div style={{
       textAlign : "center"
     }}>
-    <h1>Welcome to Counter App</h1>
+    <Heading heading="Counter App using Increment & Decrement"/>
     <h2>Counter Number is - {number} </h2>
-    <MyButton onClick={HandleInc} text="increase" />
+    <MyButton onClick={HandleInc} text="increase" /> &nbsp;
     <MyButton onClick={HandleDec} text="decrease" />
   </div>
    
